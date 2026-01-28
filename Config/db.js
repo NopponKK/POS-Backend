@@ -18,7 +18,7 @@ const mongoose = require('mongoose');
 const connectDB = async () => {
     try {
         // ใช้ srv เป็นหลักเพื่อให้ DNS ของ Atlas จัดการเลข IP ให้เอง
-        const dbUrl = process.env.DATABASE || 'mongodb+srv://nopponkrungkaew_db_user:0811597850a@cluster0.ucf82qu.mongodb.net/POS_Database?retryWrites=true&w=majority';
+        const dbUrl = process.env.DATABASE || 'mongodb+srv://admin:12345678a@cluster0.ucf82qu.mongodb.net/POS_Database?retryWrites=true&w=majority';
         
         console.log('--- ⏳ Connecting to MongoDB (SRV Mode)... ---');
         await mongoose.connect(dbUrl);
